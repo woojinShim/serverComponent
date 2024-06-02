@@ -9,9 +9,14 @@ interface SnippetEditFormProps {
 }
 
 export default function SnippetEditForm({ snippet }: SnippetEditFormProps) {
+    const [code, setCode] = useState(snippet.code)
+
     const handleEditorChange = (value: string = "") => {
-        console.log(value)
+        setCode(value)
     }
+
+    async function 
+
     return (<div>
         <Editor 
             height='40vh'
